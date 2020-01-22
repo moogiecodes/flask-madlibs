@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Madlibs</title>
+</head>
+
+<body>
+  <h1>Madlibs</h1>
+  <form action='/story' method='POST'>
+    {% for word in inputs %}
+    <label>{{ word }}: </label><input type="text" name='{{ word }}' /><br />
+    {% endfor %}
+    <button>submit</button>
+  </form>
+</body>
+
+</html>
