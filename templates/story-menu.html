@@ -7,10 +7,9 @@ Menu
 {% block body %}
 <h1>Choose A Story</h1>
 
-<form action='/story' method='POST'>
-  {% for word in inputs %}
-  <label>{{ word }}: </label><input type="text" name='{{ word }}' /><br />
-  {% endfor %}
-  <button>submit</button>
-</form>
+{% for story in story_dict %}
+<a href="/stories/{{ story }}">{{ story }}</a>
+<br />
+{% endfor %}
+
 {% endblock %}

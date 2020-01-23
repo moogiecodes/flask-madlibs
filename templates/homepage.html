@@ -6,7 +6,7 @@ Madlibs
 
 {% block body %}
 <h1>Madlibs</h1>
-<form action='/story' method='POST'>
+<form action='/{{ story }}' method='POST'>
   {% for word in inputs %}
   <label>{{ word }}: </label><input type="text" name='{{ word }}' /><br />
   {% endfor %}

@@ -35,11 +35,15 @@ class Story:
         return text
 
 
-# Here's a story to get you started
-
-
-story = Story(
+story_dict = {
+    "Short story": Story(["noun", "verb"],  "I love to {verb} a good {noun}."),
+    "Old story": Story(
     ["place", "noun", "verb", "adjective", "plural_noun"],
     """Once upon a time in a long-ago {place}, there lived a
        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
-)
+    ),
+    "Test story": Story(["noun", "plural_noun", "adverb", "past_tense_verb", "plural noun"],
+    """This is a test {noun} in which {plural_noun} are
+    {adverb} {past_tense_verb} into their proper {plural_noun}.
+    """
+    )}
