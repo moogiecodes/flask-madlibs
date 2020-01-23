@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Madlibs
+Menu
 {% endblock %}
 
 {% block body %}
-<h1>Madlibs</h1>
+<h1>Choose A Story</h1>
+
 <form action='/story' method='POST'>
   {% for word in inputs %}
   <label>{{ word }}: </label><input type="text" name='{{ word }}' /><br />

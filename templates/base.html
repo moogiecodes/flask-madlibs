@@ -5,12 +5,13 @@
   <meta charset="UTF-16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Your Story</title>
+  <title>{% block title %} YOUR TITLE {% endblock %}</title>
 </head>
 
 <body>
-  <h1>Your Story</h1>
-  <p>{{ story_text }}</p>
+  {% block body %}
+
+  {% endblock %}
 </body>
 
 </html>
